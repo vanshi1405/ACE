@@ -30,6 +30,18 @@ class LL:
             i = i.next
         i.next = o1
 
+    def removeData(self,val):
+        i = self.head
+        while i != None:
+            if i.data==val:
+                i=i.next.next
+                break
+            else:
+                i = i.next
+
+
+
+
 
 
 
@@ -42,5 +54,6 @@ l.head=node(4)
 l.addatEnd(2)
 l.addatEnd(5)
 l.addatEnd(7)
-# l.addatpos(14,1)
 l.showList()
+# l.addatpos(14,1)
+l.removeData(2)
