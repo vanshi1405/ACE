@@ -15,8 +15,10 @@ class LL:
     def addatEnd(self,data):
 
         # l.head=node(data)
+        if self.head is None:
+            o1 = node(data)
 
-        o1 = node(data)
+
         i = self.head
         while i.next != None:
           i = i.next
@@ -50,7 +52,6 @@ class LL:
 
 
 l=LL()
-l.head=node(4)
 
 l.addatEnd(2)
 l.addatEnd(5)
