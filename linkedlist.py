@@ -48,6 +48,7 @@ class LL:
 
 
 
+
 l=LL()
 l.head=node(4)
 
